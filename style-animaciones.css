@@ -1,0 +1,141 @@
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prueba{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg,rgb(163, 146, 198),rgb(7, 7, 227));
+}
+
+.prueba2{
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle,rgb(163, 146, 198),rgb(7, 7, 227));   
+}
+
+.prueba3{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    box-shadow: 3px 1px 3px 1px grey;
+    
+}
+
+.prueba4{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;    
+}
+
+.prueba4:hover{
+    box-shadow: 3px 1px 3px 1px grey;
+}
+
+.space{
+    height: 50px;
+}
+
+.prueba5{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.prueba5:hover{
+    box-shadow: 3px 1px 3px 1px grey;
+    transform: rotate(30deg);
+}
+
+.prueba6{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.prueba6:hover{
+    box-shadow: 3px 1px 3px 1px grey;
+    transform: scale(1.2,1.2);
+}
+
+.prueba7{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.prueba7:hover{
+    box-shadow: 3px 1px 3px 1px grey;
+    transform: translate(15px,15px)
+}
+
+.prueba8{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.prueba8:hover{
+    box-shadow: 3px 1px 3px 1px grey;
+    transform: skew(30deg)
+}
+
+.prueba9{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    transition: all 5s linear;
+}
+
+.prueba9:hover{
+    box-shadow: 3px 1px 3px 1px grey;
+    transform: translate(5px,5px)
+}
+
+.prueba10{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    transition: all 5s ease-in;
+}
+
+.prueba10:hover{
+    box-shadow: 3px 1px 3px 1px grey;
+    transform: translate(5px,5px)
+}
+
+.prueba11{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: movimiento;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes movimiento {
+    0%{
+        background-color: red;
+    }
+
+    10%{
+        background-color: pink;
+        border-radius: 50% ;
+        
+    }
+
+    50%{
+        background-color: green;
+        height: 50px;
+    }
+
+    100%{
+        background-color: blue;
+    }
+
+}
+

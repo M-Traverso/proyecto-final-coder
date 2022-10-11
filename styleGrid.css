@@ -1,0 +1,34 @@
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.dos{
+    grid-row: 2 span;
+}
+
+.tres{
+    grid-row: 1 / 3;
+}
+
+.cuatro{
+    grid-area: 2/2/2/2;
+}
+
+.seis{
+    grid-column: 2 span;
+    grid-row: 3/5;
+}
+
+.cinco{
+    grid-row: 2 span;
+}
