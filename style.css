@@ -7,8 +7,6 @@
 
 li{
     display:inline;
-    padding: 100px;
-    border-radius: 15px;
 }
 
  body{
@@ -56,12 +54,11 @@ form {
     overflow: hidden;
     background-color: rgba(119, 161, 171, 0.5);
     border-bottom: #b9e8ea  3px solid;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
     align-items: center;
-    justify-content: space-between;
     width: 100%;
-
+    justify-content: space-between;
 }
 
 .topnav a {
@@ -101,6 +98,8 @@ form {
     width: 200px;
     margin: 5px;
     overflow: hidden;
+    display: grid;
+    grid-area: 1/1/1/1;
 }
 
 .cajita-3{
@@ -142,6 +141,21 @@ form {
     align-items: center;
 }
 
+.container__ubicacion{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .nav{
     display: flex;
     flex-direction: row;
@@ -153,6 +167,28 @@ form {
 .ul{
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    box-sizing: border-box;
+    grid-area: 1/4/1/9;
+}
+
+.li__inicio{
+    grid-column: 1/1;
+}
+
+.li__info{
+    grid-column: 2/2;
+}
+
+.li__galeria{
+    grid-column: 3/3;
+}
+
+.li__ubicacion{
+    grid-column: 4/4;
+}
+
+.li__contacto{
+    grid-column: 5/5;
 }
 
 .p{
